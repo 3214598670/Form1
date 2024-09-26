@@ -5,18 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Формы</title>
 </head>
-<body>
-    <form>
-        <p>Имя:</p>
+<body> 
+        <form action=""> <p>Имя:</p>
         <input type="text" name="name" value="" placeholder="Ведите имя" required>
         <p>Email</p>
         <input type="email" name="email" value=""placeholder="Электроная почта" required>
         <p>Пароль</p>
         <input type="password" name="pasvord" value="" placeholder="Пароль" required>
-        <p>Число</p>
-        <input type="number" name="number" value="" placeholder="Дата" required>
+        <p>Возраст</p>
+        <input type="number" name="age" value="" placeholder="Возраст" required>
         <br> <br>
-        <button type="submit">Отправить на сервер</button>
+        <button type="submit">Отправить на сервер</button></form>
+        <form>
+            <h2>Сеанс</h2>
+            <p>Кинотеатр</p>
+            <input type="text" name="cinema" placeholder="Видите названия кинотеатра" required>
+            <p>филмы</p>
+            <input type="text" name="film" placeholder="Видите название филма" required>
+            <p>время</p>
+            <input type="time" name="time" required>
+            <p>Стоимость</p>
+            <input type="namber" name="price" placeholder="Ведите стоимость" required>
+            <br><br>
+            <button type="submit">Даные отправить о филме</button>
+
+            <button type="reset">Ачистить даные</button>
+
+            <button type="button">Обычная кнопка</button>
+
         </form>
+
+        <form>
+            <h2>Какие ваши любимые цвета?</h2>
+            <label><input type="checkbox" name="color" value="yellow" checked>Желтый </label>
+            <br>
+            <label><input type="checkbox" name="color" value="red" autofocus>Красный</label>
+             <br>
+             <label> <input type="checkbox" name="color" value="blue" disabled>Синий</label>
+            <br>
+            <button type="submit">Отправить цвет</button>
+        </form>
+
+        <form>
+            <h2>Город в котором я живу</h2>
+            <label>
+                <input type="radio" name="city" value="Tyumen">Тюмень
+            </label> <br>
+            <label>
+                <input type="radio" name="city"  value="Ekb">Екатиринбург
+            </label> <br>
+            <label>
+                <input type="radio" name="city"  value="Moscow">Москва
+            </label>  <br>
+            <button type="">Отправить результат</button> 
+        </form>
+
+        <input type="range"> <br>
+        <input type="color"> <br>
+        <input type="file">
+        
 </body>
 </html>
